@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Boring Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <header onmouseenter="partyMode(this)" onmouseleave="boringMode(this)">
+      <h1>My Boring Website</h1>
+    </header>
+
+    <container class="flex-container gap padded">
+      <aside class="left-side flex-container column">
+        <div class="boring-fact padded">
+          <div class="fact">
+            <h3 onmouseenter="h3Change(this)">Boring fact...</h3>
+            <p onmouseenter="pAsideChange(this)">
+              The standard width of a double-spaced line on U.S. letter-sized
+              paper is about 0.34 inches.
+            </p>
+          </div>
+        </div>
+        <button
+          onclick="clickedThis(this)"
+          class="misery round-lg top-marg self-center"
+        >
+          Put me out of my misery ... pls
+        </button>
+      </aside>
+      <main
+        onclick="mainClick(this)"
+        class="right-side flex-container column padded"
+      >
+        <h2 onclick="h2Click(this, event)">The Sky Was Blue</h2>
+        <p onclick="pClick(this, event)">
+          Clouds were present, but not particularly noteworthy. The sun was
+          shining. The ground was beneath. People were generally doing what they
+          were doing. One could observe various objects and individuals, each
+          with their own features and locations. The air was comprised of
+          typical gases, and gravity continued to exert its influence.
+        </p>
+        <div class="emojis flex-container self-center">
+          <div onmouseenter="emoji1on(this)" onmouseleave="emojiOff(this)">
+            😑
+          </div>
+          <div onmouseenter="emoji2on(this)" onmouseleave="emojiOff(this)">
+            😑
+          </div>
+          <div onmouseenter="emoji3on(this)" onmouseleave="emojiOff(this)">
+            😑
+          </div>
+        </div>
+      </main>
+    </container>
+    <hr />
+  </body>
+</html>
