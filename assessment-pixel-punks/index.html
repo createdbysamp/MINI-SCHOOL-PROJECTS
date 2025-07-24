@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelPunks</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <h1>Pixel<span>Punks</span></h1>
+        <div class="search-cart-container">
+          <input type="search" name="Search" id="search-bar" />
+          <button
+            onclick="searchBar('#search-bar')"
+            class="search-btn"
+            type="submit"
+          >
+            Search
+          </button>
+          <div class="cart">
+            <img src="/files/cart.webp" alt="cart" />
+            <span id="cart-tally" class="cart-font">0</span>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul class="gap">
+          <li><a href="">Home</a></li>
+          <li><a href="">Games</a></li>
+          <li><a href="">Account</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-container">
+      <h2>Punk Picks of the Week</h2>
+      <main class="flex">
+        <img
+          onclick="arrow('#blaster-rex')"
+          class="arrow"
+          src="/files/chevron-left.webp"
+          alt="left-arrow"
+        />
+        <img
+          id="blaster-rex"
+          class="blaster-rex"
+          src="/files/blasterrex.webp"
+          alt="blaster-rex-art"
+        />
+        <img
+          onclick="arrow('#blaster-rex')"
+          class="arrow"
+          src="/files/chevron-right.webp"
+          alt="right-arrow"
+        />
+      </main>
+      <aside>
+        <h3>Top of the Punk Stack</h3>
+        <div class="cards">
+          <div class="card">
+            <img
+              class="card-img"
+              src="/files/chronoclash-turbo.webp"
+              alt="chronoclash-art"
+            />
+            <div class="card-info">
+              <p class="text-title">Chronoclash Turbo</p>
+              <p class="text-body">
+                Shift gears and realities in this high-octane, time-warping
+                racer. Outdrive gladiators, cowboys, and future cops across eras
+                in an endless multiverse showdown.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">$10.99</span>
+              <div class="card-button">
+                <button onclick="addToCart()" class="cart-button">
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="/files/hyper-flux.webp"
+              alt="hyperflux-art"
+            />
+            <div class="card-info">
+              <p class="text-title">Hyper Flux</p>
+              <p class="text-body">
+                Dive into a neon-lit reactor run where gravity's optional and
+                the stakes are nuclear. Speed, jump, and hack your way through a
+                rogue AI's meltdown maze.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">$12.99</span>
+              <div class="card-button">
+                <button onclick="addToCart()" class="cart-button">
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="/files/starpunch-7.webp"
+              alt="starpunch-art"
+            />
+            <div class="card-info">
+              <p class="text-title">Starpunch 7</p>
+              <p class="text-body">
+                Humanity's last hope is a boxing glove taped to a rocket. Jab,
+                dodge, and blast your way throughw aves of alien punks in this
+                space-brawling chaos-fueled classic.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">$8.99</span>
+              <div class="card-button">
+                <button onclick="addToCart()" class="cart-button">
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
