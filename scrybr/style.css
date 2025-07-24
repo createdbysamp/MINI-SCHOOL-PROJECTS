@@ -1,0 +1,89 @@
+body header {
+  padding-block: 0;
+}
+
+.flex-container {
+  display: flex;
+  padding: 1rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .flex-end {
+  align-self: flex-end;
+} */
+
+h1 {
+  background-color: rebeccapurple;
+  background-size: cover;
+  padding: 1.25rem;
+  letter-spacing: 1rem;
+  text-indent: 1.25rem;
+}
+
+.left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right {
+  flex: 0.75;
+}
+
+.purple {
+  background-color: rgb(90, 76, 172);
+  padding: 1rem;
+}
+
+.darkPurple {
+  background-color: rgba(90, 76, 172, 0.483);
+  padding: 1rem;
+}
+.gap {
+  gap: 1rem;
+}
+
+.rounded {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.circle {
+  display: flex;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.circle2 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+h4 {
+  margin: 0.5rem 0;
+  color: rgba(169, 121, 218, 0.46);
+}
+
+p.bio {
+  font-size: smaller;
+}
+
+.name {
+  color: rgba(187, 177, 232, 0.64);
+  margin: 0 0.5rem;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.sub-buttons {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+}

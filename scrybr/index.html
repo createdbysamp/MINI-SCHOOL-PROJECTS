@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrybr</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Scrybr</h1>
+    </header>
+    <div class="flex-container gap">
+      <main class="left">
+        <div
+          id="Elyndra Willowstep"
+          class="purple rounded"
+          onmouseover="tactile(this)"
+          onmouseout="nontactileElem(this)"
+        >
+          <div class="account">
+            <img src="/files/elyndra-willowstep.png" alt="" class="circle2" />
+            <span class="name">Elyndra Willowstep</span>
+          </div>
+          <p>
+            Just spooted a moonshwdow lynx near the Duskwatch cliffs. Left it a
+            bundle of chamomile and a whispered promise. 🌙🐈‍⬛
+          </p>
+          <div class="sub-buttons gap">
+            <span id="elyScry">0</span> <span>scryz</span>
+            <button onclick="scryClick2(this)">🔮 scry</button>
+          </div>
+        </div>
+        <div
+          id="Drakthorn the Blue"
+          class="purple rounded"
+          onmouseover="tactile(this)"
+          onmouseout="nontactileElem(this)"
+        >
+          <div class="account">
+            <img src="/files/drakthorn.png" alt="" class="circle2" />
+            <span class="name">Drakthorn the Blue</span>
+          </div>
+          <p>
+            Why do rangers always post vague forest poetry? Say what you mean,
+            Elyndra. Also, I sneezed fire today. Again 😤🔥
+          </p>
+          <div class="sub-buttons gap">
+            <span id="drakScry">0</span> <span>scryz</span>
+            <button onclick="scryClick(this)">🔮 scry</button>
+          </div>
+        </div>
+        <div
+          id="MycoMage"
+          class="purple rounded"
+          onmouseover="tactile(this)"
+          onmouseout="nontactileElem(this)"
+        >
+          <div class="account">
+            <img src="/files/mycomage.png" alt="" class="circle2" />
+            <span class="name">MycoMage</span>
+          </div>
+          <p>
+            Reminder: licking glowshrooms is not advised. Side effects include
+            mild levitation and conversational goblins. Ask me how I know.
+          </p>
+          <div class="sub-buttons gap">
+            <span id="mageScry">0</span> <span>scryz</span>
+            <button onclick="scryClick2(this)">🔮 scry</button>
+          </div>
+        </div>
+      </main>
+
+      <aside class="right">
+        <div
+          class="flex-column darkPurple rounded"
+          onmouseover="tactile(this)"
+          onmouseout="nontactile(this)"
+        >
+          <img class="circle" src="/files/elyndra-willowstep.png" alt="" />
+          <h4>Elyndra Willowstep</h4>
+          <p class="bio">
+            Roaming the Whispering Pines. Collector of rare herbs, secrets, and
+            starry-sky selfies. If you're lost, follow the moss ✨⏱️
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
